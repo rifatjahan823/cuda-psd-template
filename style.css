@@ -1,0 +1,641 @@
+/*-----------------------------------------------------------------------------------
+
+	Template Name: phototime
+	Template URI: http://www.softtech-it.com
+	Description: photo related template
+	Author: Mtm Likha liya
+	Author URI: http://www.tom.com
+	License: GNU General Public License version 3.0
+	License URI: http://www.gnu.org/licenses/gpl-3.0.html
+	Version: 1.0
+
+-----------------------------------------------------------------------------------
+
+	1. Typography
+	2. Header Area
+		2.1 Menu
+		2.2 Welcome Text 
+		2.3 Bottom Menu 
+	3. Getstarte
+	4. Design Area
+	5. Community Area
+	6. Subscribe Area
+	7. Download Area
+	8. Footer Area
+
+-----------------------------------------------------------------------------------*/
+
+
+/************** 1. Typography ************************/
+
+*{margin:0;padding:0;}
+.container{
+	width:80%;
+	margin:0 auto;
+	max-width:960px;
+}
+.fix{
+	overflow:hidden;
+}
+.floatleft{
+	float:left;
+}
+.floatright{
+	float:right;
+}
+a{
+	text-decoration:none;
+	color:#ffffff;
+}
+
+/********** Header-area Start *************/
+.header-area{
+	background:#87509c;
+	color:#f7f3ea;
+	padding:55px 0;
+}
+.logo{
+	width:30%;
+}
+.menu-area{
+	clear:both;
+}
+
+.main-menu ul{
+	list-style-type:none;
+}
+.main-menu ul li{
+	float:left;
+	margin-left:2px;
+}
+.main-menu ul li:first-child{
+	margin-left:none;
+}
+.main-menu ul li a{
+	padding:5px 10px ;
+	display:block;
+	color:white;
+	text-transform:uppercase;
+	font-family: 'Titillium Web', sans-serif;
+	font-weight:400;
+	font-size:16px;
+	background:transparent;
+}
+.main-menu ul li a:hover{
+	background:#643a79;
+	border-radius:5px;
+}
+.main-menu ul li.active{
+	background:#643a79;
+	border-radius:5px;
+}
+
+.welcome-area{
+	
+	text-align:center;
+	padding:110px 0;
+	width:100%;
+}
+.welcome-area h2{
+	color:#f7f3ea;
+	font-family: 'Titillium Web', sans-serif;
+	font-weight:700;
+	font-size:40px;
+	line-height:1.3em;
+}
+.welcome-area  button {
+	background:#eb7d4b;
+	color:#ffffff;
+	padding:18px 70px;
+	display:inline-block;
+	margin-top:50px;
+	border:none;
+	text-transform:uppercase;
+	font-family: 'Titillium Web', sans-serif;
+	font-weight:600;
+	font-size:18px;
+	border-radius:4px;
+	border-bottom:5px solid #c86a40;
+	transition:.5s;
+}
+.welcome-area  button:hover{
+	background:#333366;
+	border-bottom:5px solid #330066;
+}
+
+/******** Service-area Start *******/
+.service-area{
+	background:#17c2a4;
+	padding:90px 0;
+	color:#ffffff;
+}
+.content{
+	text-align:center;
+}
+.content h2{
+	text-transform:uppercase;
+	letter-spacing:6px;
+	font-size:40px;
+	font-family: 'Titillium Web', sans-serif;
+	font-weight:700;	
+}
+.content p{
+	margin-top:30px;
+	font-family: 'Titillium Web', sans-serif;
+	font-weight:400;
+	letter-spacing:1px;	
+	font-size:18px;
+}
+.content h2:after {
+	content: '';
+	display: block;
+	margin: auto;
+	margin-top:10px;
+	width: 80px;
+	height:4px;
+	background:#14a58c;
+}
+.service-col-1{
+	width:23%;
+	margin-right:2%;
+	margin-top:100px;
+	text-align:center;
+}
+.service-col-1 img{
+	width:90px;
+	height:90px;
+}
+.service-col-1 h2{
+	font-size:25px;
+	letter-spacing:1px;
+	text-transform:uppercase;
+	font-family: 'Titillium Web', sans-serif;
+	font-weight:700;
+	margin-bottom:20px;
+	margin-top:25px;	
+}
+.service-col-1 p{
+	font-size:16px;
+	line-height:1.6em;
+	font-family: 'Titillium Web', sans-serif;
+	font-weight:300;	
+}
+
+/********** Team-area Start ***********/
+
+.team-area{
+	background:#e7f1f8;
+	padding:90px 0;
+}
+.wrapper{
+	text-align:center;
+}
+.wrapper h2{
+	color:#3c4761;
+	text-transform:uppercase;
+	letter-spacing:3px;
+	font-size:38px;
+	font-family: 'Titillium Web', sans-serif;
+	font-weight:700;	
+}
+.wrapper h2:after{
+	content: '';
+	display: block;
+	margin: auto;
+	margin-top:10px;
+	width: 95px;
+	height:4px;
+	background:#c8d9e5;	
+}
+.wrapper p{
+	color:#3c4761;
+	font-family: 'Titillium Web', sans-serif;
+	font-weight:400;
+	margin-top:10px;	
+}
+.team-area-col{
+	width:23%;
+	margin-right:2%;
+	text-align:center;
+}
+.team-area-col img{
+	display:block;
+	margin:auto;
+	border-radius:50%;
+	width:120px;
+	height:120px;
+	margin-top:50px;
+}
+
+.team-area-col ul{
+	list-style-type:none;
+}
+.team-area-col ul li{
+	display:inline;
+}
+
+.team-area-col ul li a i{
+	margin-top:20px;
+	font-size:12px;
+	width:12px;
+	height:12px;
+	border-radius:50%;
+    padding:8px;
+    background:#bdd1df;
+	transition:.5s;
+}
+.team-area-col ul li a i:hover{
+	background:#87509c;
+} 
+.team-area-col h3{
+	color:#3c4761;
+	font-family: 'Titillium Web', sans-serif;
+	font-weight:700;
+	margin-bottom:5px;
+	margin-top:40px;	
+}
+.team-area-col h6{
+	color:#55c2e9;
+	font-family: 'Titillium Web', sans-serif;
+	font-weight:400;
+	font-size:15px;	
+}
+.team-area-col p{
+	color:#5d677b;
+	font-family: 'Titillium Web', sans-serif;
+	font-weight:300;
+	font-size:18px;	
+	margin-top:20px;
+}
+
+/********* Skill-area Start *********/
+.skill-area{
+	background:#ffffff;
+	padding:90px 0;
+	text-align:center;
+}
+.intro{
+	margin-bottom:30px;
+}
+.intro h2{
+	color:#3C4761;
+	text-transform:uppercase;
+	font-family: 'Titillium Web', sans-serif;
+	font-weight:700;
+    letter-spacing:5px;
+    font-size:40px;  	
+}
+.intro h2:after{
+	content:'';
+	display:block;
+	margin:auto;
+	height:4px;
+	width:95px;
+	background:#dfe8ed;
+	margin-top:10px;
+}
+.intro p{
+	color:#3C4761;
+	margin-top:30px;
+	font-family: 'Titillium Web', sans-serif;
+	font-weight:400;
+    font-size:18px;	
+}
+
+.skill-item{
+	width:23%;
+	margin-right:2.5%;
+}
+.skill-item:nth-child(4n){
+	margin-right:0;
+} 
+.skill{
+	margin-top:80px;
+}
+.skill-item h3{
+	margin-top:20px;
+	color:#3c4761;
+	text-transform:uppercase;
+	font-family: 'Titillium Web', sans-serif;
+	font-weight:700;	
+}
+
+/********* Portfolio-area Start *******/
+.portfolio-area{
+		text-align:center;
+	background:#ffdd99;
+	padding:100px 0;
+}
+.portfolio-content {
+	text-align:center;
+}
+.portfolio-content h2{
+	color:#393939;
+	text-transform:uppercase;
+	font-family: 'Titillium Web', sans-serif;
+	font-weight:700;
+    letter-spacing:5px;
+    font-size:40px;	
+}
+.portfolio-content h2:after{
+	content:'';
+	display:block;
+	margin:auto;
+	height:4px;
+	width:95px;
+	background:#E5C37F;
+	margin-top:10px;	
+}
+.portfolio-content p{
+	color:#393939;
+	font-family: 'Titillium Web', sans-serif;
+	font-weight:400;
+	font-size:18px;
+	margin-top:25px;;
+}
+.portfolio-content ul{
+	list-style-type:none;
+	margin-top:50px;
+	margin-bottom:70px;
+}
+.portfolio-content ul li{
+	display:inline;
+	margin-right:1%;
+}
+.portfolio-content ul li a{
+	background:#ebc985;
+	padding:5px 10px;
+	text-transform:uppercase;
+	font-size:18px;
+	border-radius:5px;
+	color:black;
+	font-family: 'Titillium Web', sans-serif;
+	font-weight:400;
+    min-width:6%;
+    text-align:center;
+	display:inline-block;	
+}
+.portfolio-content ul li a:hover{
+	background-color:#ffffff;
+}
+.portfolio-content ul li.active a{
+	background-color:#ffffff;
+}
+.portfolio-col img{
+	width:100%;
+	height:auto;
+}
+.portfolio-col{
+	width:48%;
+	margin-right:2%;
+	text-align:center;
+	margin-top:5%;
+}
+.portfolio-col p{
+	color:#393939;
+	margin-top:20px;
+	font-family: 'Titillium Web', sans-serif;
+	font-weight:400;
+text-transform:uppercase;	
+}
+
+.portfolio-area  .btn {
+	background:#17c2a4;
+	color:#ffffff;
+	padding:18px 70px;
+	display:inline-block;
+	margin-top:50px;
+	border:none;
+	text-transform:uppercase;
+	font-family: 'Titillium Web', sans-serif;
+	font-weight:600;
+	font-size:18px;
+	border-radius:4px;
+	border-bottom:5px solid #14a58c;
+	transition:.5s;
+}
+.portfolio-area  .btn:hover {
+	background:#336666;
+	border-bottom:5px solid #336633;
+}
+
+/*********** About-area Start *************/
+.about-area{
+	background:#d74680;
+	padding:100px 0;
+}
+
+.about-content{
+	text-align:center;
+	color:#ffffff;
+}
+.about-content h2{
+	text-transform:uppercase;
+	font-family: 'Titillium Web', sans-serif;
+	font-weight:700;
+    letter-spacing:5px;
+    font-size:40px;	
+}
+.about-content h2:after{
+	content:'';
+	display:block;
+	margin:auto;
+	height:4px;
+	width:95px;
+	background:#b73c6d;
+	margin-top:10px;	
+}
+.about-content h5{
+	margin-top:20px;
+	font-family: 'Titillium Web', sans-serif;
+	font-weight:400;	
+}
+.about-area-col{
+	width:45%;
+	margin-right:5%;
+	margin-top:90px;
+	margin-bottom:40px;
+	color:#ffffff;
+}
+.about-area-col img{
+	width:100%;
+	height:auto;
+	max-width:90px;
+	max-height:90px;
+	border-radius:50%;
+}
+.client-area{
+	overflow:hidden;
+	width:75%;
+	display:block;
+}
+.image{
+	display:block;
+	width:20%;
+	margin-right:5%;
+}
+
+.about-area-col p{
+	font-family: 'Titillium Web', sans-serif;
+	font-weight:300;
+	font-style:italic;	
+}
+.about-area-col h4{
+	text-transform:uppercase;
+	margin-top:18px;
+	font-family: 'Titillium Web', sans-serif;
+	font-weight:600;
+	font-size:30px;	
+}
+.about-area-col h6{
+	color:#facd96;
+	font-size:18px;
+	font-family: 'Titillium Web', sans-serif;
+	font-weight:400;	
+	letter-spacing:1px;
+}
+
+/******** Submit-area Start **********/
+.submit-area{
+	background:#3c5499;
+	padding:90px 0;
+	text-align:center;
+}
+.submit-content h2{
+	text-transform:uppercase;
+	font-family: 'Titillium Web', sans-serif;
+	font-weight:700;
+    letter-spacing:5px;
+    font-size:40px;
+    color:#ffffff;	
+}
+.submit-content h2:after{
+	content:'';
+	display:block;
+	margin:auto;
+	width:95px;
+	height:4px;
+	background:#273a71;
+	margin-top:10px;
+}
+.submit-content p{
+	color:#ffffff;
+	font-family: 'Titillium Web', sans-serif;
+	font-weight:300;
+	font-size:18px;	
+	margin-top:20px;
+	margin-bottom:80px;
+}
+.submit-area .btn{
+	background:#30bae7;
+	color:#ffffff;
+	padding:18px 70px;
+	display:inline-block;
+	margin-top:50px;
+	border:none;
+	text-transform:uppercase;
+	font-family: 'Titillium Web', sans-serif;
+	font-weight:600;
+	font-size:18px;
+	border-radius:4px;
+	border-bottom:5px solid #299ec5;
+   cursor:pointer;	
+   transition:.5s;
+}
+.submit-area .btn:hover{
+	background:#64B5F6;
+	border-bottom:5px solid #4FC3F7;
+}
+.form input{
+	padding:15px 20px; 
+	width:35%;
+	border:none;
+	border-radius:5px;
+	background:#273a71;
+	margin-bottom:30px;
+	color:white;
+}
+.form input[type=text]{
+		margin-right:2%;
+}
+::placeholder {
+	color:#ffffff;
+	font-family: 'Titillium Web', sans-serif;
+	font-weight:400;
+	text-transform:capitalize;	
+}
+:-ms-placeholder { /* Internet Explorer 10-11 */
+ 	color:#ffffff;
+	font-family: 'Titillium Web', sans-serif;
+	font-weight:400;
+	text-transform:capitalize;
+}
+::-moz-placeholder {
+	color:white;
+	font-family: 'Titillium Web', sans-serif;
+	font-weight:600;
+	text-transform:capitalize;
+	font-size:20px;
+}
+
+.form textarea{
+	border:none;
+	border-radius:5px;
+	background:#273a71;
+	color:white;
+    padding:0px 15px;
+	height:200px;width:80%	
+}
+
+/*********** Footer-area Start ************/
+
+.footer-area{
+	background:#344b8e;
+	padding:30px 0;
+}
+
+.footer-menu ul{
+	list-style-type:none;
+	text-align:center;
+}
+
+.footer-menu ul li{
+	display:inline;
+	margin-right:2%;
+}
+.footer-menu ul li:last-child{
+	margin-right:0;
+}
+.footer-menu ul li a{
+	color:#ffffff;
+	text-transform:capitalize;
+	font-family: 'Titillium Web', sans-serif;
+	font-weight:600;
+    font-size:20px;	
+	display:inline-block;
+	padding:10px 0;
+}
+.footer-menu ul li a:hover{
+	color:#3294c6;
+}
+
+.footer-menu ul .active a{
+	color:#3294c6;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

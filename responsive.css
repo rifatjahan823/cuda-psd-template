@@ -1,0 +1,43 @@
+@media all and (max-width: 768px){
+.container{
+	width:95%;
+}
+.logo{
+	width:100%;
+	float:none;
+	text-align:center;
+	margin-bottom:50px;
+}
+.main-menu{
+	float:none;
+}
+.main-menu ul{
+	text-align:center;
+}
+.main-menu ul li{
+	float:none;
+	display:inline;
+	margin-right:1%;
+	padding:8px 5px ;
+}
+.main-menu ul li a{
+	
+	display:inline-block;
+}
+.service-col-1{
+	width:45%;
+	margin-right:5%;
+}
+.team-area-col{
+	width:45%;
+	margin-right:5%;
+}
+.skill-item{
+	width:45%;
+	margin-right:5%;
+}
+
+.form input{
+	width:80%;
+}
+}
